@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2387EC5A7C18EA33B9CF76A5 /* Pods_jarvis_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D999A0A2EF5C3432E9C39A9E /* Pods_jarvis_ios.framework */; };
+		4E3665B020A9C5CE00737FF9 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3665AF20A9C5CE00737FF9 /* Queue.swift */; };
+		4E3665B220A9C5EE00737FF9 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3665B120A9C5EE00737FF9 /* LinkedList.swift */; };
+		4E3DCF1020AB20B7001B71E3 /* ContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF0F20AB20B7001B71E3 /* ContextManager.swift */; };
+		4E3DCF1220AB20EC001B71E3 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF1120AB20EC001B71E3 /* Alerts.swift */; };
+		4E3DCF1420AB33FF001B71E3 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF1320AB33FF001B71E3 /* AudioPlayer.swift */; };
+		4E3DCF1620AB367E001B71E3 /* Clova.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF1520AB367E001B71E3 /* Clova.swift */; };
+		4E3DCF1820AB3C05001B71E3 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF1720AB3C05001B71E3 /* Device.swift */; };
+		4E3DCF1A20AB40BA001B71E3 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF1920AB40BA001B71E3 /* Speaker.swift */; };
+		4E3DCF1C20AB4144001B71E3 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF1B20AB4144001B71E3 /* SpeechSynthesizer.swift */; };
+		4E3DCF2220AC2300001B71E3 /* EncyclopediaTemplateCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF2120AC2300001B71E3 /* EncyclopediaTemplateCollectionCell.swift */; };
+		4E3DCF2720ADA8AD001B71E3 /* StreamExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF2620ADA8AD001B71E3 /* StreamExtensions.swift */; };
+		4E3DCF2920ADABCC001B71E3 /* PCMBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF2820ADABCC001B71E3 /* PCMBuffer.swift */; };
+		4E3DCF2B20ADCDB7001B71E3 /* AVAudioPCMBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3DCF2A20ADCDB7001B71E3 /* AVAudioPCMBuffer.swift */; };
+		4E4CAA15209DB6C7001A1305 /* ClovaAccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CAA14209DB6C7001A1305 /* ClovaAccessTokenManager.swift */; };
+		4E4CAA1A20A309E4001A1305 /* ClovaAPIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4CAA1920A309E4001A1305 /* ClovaAPIKey.plist */; };
+		4E4CAA1C20A30C2D001A1305 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CAA1B20A30C2D001A1305 /* APIKeyManager.swift */; };
+		4E4CAA1E20A31C5D001A1305 /* ClovaServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4CAA1D20A31C5D001A1305 /* ClovaServiceClient.swift */; };
+		4E4D9EFE20A33097000F475B /* LoginWithNaverIdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9EFD20A33097000F475B /* LoginWithNaverIdTests.swift */; };
+		4E4D9F3D20A58749000F475B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F3C20A58749000F475B /* Setting.swift */; };
+		4E4D9F7420A598F4000F475B /* TextBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F6B20A598F3000F475B /* TextBodyParser.swift */; };
+		4E4D9F7520A598F4000F475B /* URLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F6C20A598F3000F475B /* URLEncodedBodyParser.swift */; };
+		4E4D9F7620A598F4000F475B /* BodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F6D20A598F3000F475B /* BodyParser.swift */; };
+		4E4D9F7720A598F4000F475B /* MultiPartBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F6E20A598F3000F475B /* MultiPartBodyParser.swift */; };
+		4E4D9F7820A598F4000F475B /* RawBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F6F20A598F3000F475B /* RawBodyParser.swift */; };
+		4E4D9F7920A598F4000F475B /* JSONBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F7020A598F3000F475B /* JSONBodyParser.swift */; };
+		4E4D9F7A20A598F4000F475B /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F7120A598F3000F475B /* Part.swift */; };
+		4E4D9F7B20A598F4000F475B /* BodyParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F7220A598F3000F475B /* BodyParserProtocol.swift */; };
+		4E4D9F7C20A598F4000F475B /* ParsedBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F7320A598F3000F475B /* ParsedBody.swift */; };
+		4E4D9F7F20A5A54E000F475B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D9F7E20A5A54E000F475B /* StringExtensions.swift */; };
+		E3343EC2F6BDCB88C43C5BB9 /* Pods_jarvis_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D999A0A2EF5C3432E9C39A9E /* Pods_jarvis_ios.framework */; };
+		F54748B9209196A90002F65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54748B8209196A90002F65B /* AppDelegate.swift */; };
+		F54748BB209196A90002F65B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54748BA209196A90002F65B /* ViewController.swift */; };
+		F54748BE209196A90002F65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54748BC209196A90002F65B /* Main.storyboard */; };
+		F54748C0209196AA0002F65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54748BF209196AA0002F65B /* Assets.xcassets */; };
+		F54748C3209196AA0002F65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54748C1209196AA0002F65B /* LaunchScreen.storyboard */; };
+		F54748CB209196EF0002F65B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F54748CA209196EF0002F65B /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E4D9F0020A33097000F475B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F54748AD209196A90002F65B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F54748B4209196A90002F65B;
+			remoteInfo = "jarvis-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E3665AF20A9C5CE00737FF9 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4E3665B120A9C5EE00737FF9 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		4E3DCF0F20AB20B7001B71E3 /* ContextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextManager.swift; sourceTree = "<group>"; };
+		4E3DCF1120AB20EC001B71E3 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		4E3DCF1320AB33FF001B71E3 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		4E3DCF1520AB367E001B71E3 /* Clova.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clova.swift; sourceTree = "<group>"; };
+		4E3DCF1720AB3C05001B71E3 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4E3DCF1920AB40BA001B71E3 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		4E3DCF1B20AB4144001B71E3 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		4E3DCF2120AC2300001B71E3 /* EncyclopediaTemplateCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaTemplateCollectionCell.swift; sourceTree = "<group>"; };
+		4E3DCF2620ADA8AD001B71E3 /* StreamExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamExtensions.swift; sourceTree = "<group>"; };
+		4E3DCF2820ADABCC001B71E3 /* PCMBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCMBuffer.swift; sourceTree = "<group>"; };
+		4E3DCF2A20ADCDB7001B71E3 /* AVAudioPCMBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPCMBuffer.swift; sourceTree = "<group>"; };
+		4E4CAA14209DB6C7001A1305 /* ClovaAccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClovaAccessTokenManager.swift; sourceTree = "<group>"; };
+		4E4CAA1920A309E4001A1305 /* ClovaAPIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ClovaAPIKey.plist; sourceTree = "<group>"; };
+		4E4CAA1B20A30C2D001A1305 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		4E4CAA1D20A31C5D001A1305 /* ClovaServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClovaServiceClient.swift; sourceTree = "<group>"; };
+		4E4D9EFB20A33097000F475B /* jarvis-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jarvis-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4D9EFD20A33097000F475B /* LoginWithNaverIdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithNaverIdTests.swift; sourceTree = "<group>"; };
+		4E4D9EFF20A33097000F475B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E4D9F3C20A58749000F475B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		4E4D9F6B20A598F3000F475B /* TextBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBodyParser.swift; sourceTree = "<group>"; };
+		4E4D9F6C20A598F3000F475B /* URLEncodedBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncodedBodyParser.swift; sourceTree = "<group>"; };
+		4E4D9F6D20A598F3000F475B /* BodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyParser.swift; sourceTree = "<group>"; };
+		4E4D9F6E20A598F3000F475B /* MultiPartBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPartBodyParser.swift; sourceTree = "<group>"; };
+		4E4D9F6F20A598F3000F475B /* RawBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawBodyParser.swift; sourceTree = "<group>"; };
+		4E4D9F7020A598F3000F475B /* JSONBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONBodyParser.swift; sourceTree = "<group>"; };
+		4E4D9F7120A598F3000F475B /* Part.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		4E4D9F7220A598F3000F475B /* BodyParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyParserProtocol.swift; sourceTree = "<group>"; };
+		4E4D9F7320A598F3000F475B /* ParsedBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedBody.swift; sourceTree = "<group>"; };
+		4E4D9F7E20A5A54E000F475B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		4EDF9FDF209819EE00B03045 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810AB77DF0288D3623EB3414 /* Pods-jarvis-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jarvis-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-jarvis-ios/Pods-jarvis-ios.release.xcconfig"; sourceTree = "<group>"; };
+		D999A0A2EF5C3432E9C39A9E /* Pods_jarvis_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jarvis_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E749508CEA7B1E03FC7B3A13 /* Pods-jarvis-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jarvis-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jarvis-ios/Pods-jarvis-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		F54748B5209196A90002F65B /* jarvis-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jarvis-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54748B8209196A90002F65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F54748BA209196A90002F65B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F54748BD209196A90002F65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F54748BF209196AA0002F65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F54748C2209196AA0002F65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F54748C4209196AA0002F65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54748CA209196EF0002F65B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E4D9EF820A33097000F475B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54748B2209196A90002F65B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2387EC5A7C18EA33B9CF76A5 /* Pods_jarvis_ios.framework in Frameworks */,
+				E3343EC2F6BDCB88C43C5BB9 /* Pods_jarvis_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E3DCF0C20AB1FBD001B71E3 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DCF1120AB20EC001B71E3 /* Alerts.swift */,
+				4E3DCF1320AB33FF001B71E3 /* AudioPlayer.swift */,
+				4E3DCF1520AB367E001B71E3 /* Clova.swift */,
+				4E3DCF1720AB3C05001B71E3 /* Device.swift */,
+				4E3DCF1920AB40BA001B71E3 /* Speaker.swift */,
+				4E3DCF1B20AB4144001B71E3 /* SpeechSynthesizer.swift */,
+				4E3DCF0F20AB20B7001B71E3 /* ContextManager.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		4E4D9EFC20A33097000F475B /* jarvis-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E4D9EFD20A33097000F475B /* LoginWithNaverIdTests.swift */,
+				4E4D9EFF20A33097000F475B /* Info.plist */,
+			);
+			path = "jarvis-iosTests";
+			sourceTree = "<group>";
+		};
+		4E4D9F6A20A598F3000F475B /* bodyParser */ = {
+			isa = PBXGroup;
+			children = (
+				4E4D9F6B20A598F3000F475B /* TextBodyParser.swift */,
+				4E4D9F6C20A598F3000F475B /* URLEncodedBodyParser.swift */,
+				4E4D9F6D20A598F3000F475B /* BodyParser.swift */,
+				4E4D9F6E20A598F3000F475B /* MultiPartBodyParser.swift */,
+				4E4D9F6F20A598F3000F475B /* RawBodyParser.swift */,
+				4E4D9F7020A598F3000F475B /* JSONBodyParser.swift */,
+				4E4D9F7120A598F3000F475B /* Part.swift */,
+				4E4D9F7220A598F3000F475B /* BodyParserProtocol.swift */,
+				4E4D9F7320A598F3000F475B /* ParsedBody.swift */,
+			);
+			path = bodyParser;
+			sourceTree = "<group>";
+		};
+		4E4D9F7D20A5A53E000F475B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E4D9F7E20A5A54E000F475B /* StringExtensions.swift */,
+				4E3DCF2620ADA8AD001B71E3 /* StreamExtensions.swift */,
+				4E3DCF2A20ADCDB7001B71E3 /* AVAudioPCMBuffer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4EDF9FDB2095E76700B03045 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F54748B8209196A90002F65B /* AppDelegate.swift */,
+				F54748BF209196AA0002F65B /* Assets.xcassets */,
+				F54748C1209196AA0002F65B /* LaunchScreen.storyboard */,
+				F54748C4209196AA0002F65B /* Info.plist */,
+				4E4CAA1920A309E4001A1305 /* ClovaAPIKey.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EDF9FDE2096D85200B03045 /* Jarvis */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DCF0C20AB1FBD001B71E3 /* Context */,
+				4E4CAA1D20A31C5D001A1305 /* ClovaServiceClient.swift */,
+				4E4CAA14209DB6C7001A1305 /* ClovaAccessTokenManager.swift */,
+				4E4CAA1B20A30C2D001A1305 /* APIKeyManager.swift */,
+				4E3665AF20A9C5CE00737FF9 /* Queue.swift */,
+				4E3665B120A9C5EE00737FF9 /* LinkedList.swift */,
+			);
+			path = Jarvis;
+			sourceTree = "<group>";
+		};
+		B0640531F30CA8BE179DF746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E749508CEA7B1E03FC7B3A13 /* Pods-jarvis-ios.debug.xcconfig */,
+				810AB77DF0288D3623EB3414 /* Pods-jarvis-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F54748AC209196A90002F65B = {
+			isa = PBXGroup;
+			children = (
+				F54748CA209196EF0002F65B /* Podfile */,
+				F54748B7209196A90002F65B /* jarvis-ios */,
+				4E4D9EFC20A33097000F475B /* jarvis-iosTests */,
+				F54748B6209196A90002F65B /* Products */,
+				B0640531F30CA8BE179DF746 /* Pods */,
+				FC9FDAC3602D7A2309CEB936 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F54748B6209196A90002F65B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F54748B5209196A90002F65B /* jarvis-ios.app */,
+				4E4D9EFB20A33097000F475B /* jarvis-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F54748B7209196A90002F65B /* jarvis-ios */ = {
+			isa = PBXGroup;
+			children = (
+				4E4D9F7D20A5A53E000F475B /* Extensions */,
+				4E4D9F6A20A598F3000F475B /* bodyParser */,
+				4EDF9FDE2096D85200B03045 /* Jarvis */,
+				4EDF9FDB2095E76700B03045 /* Supporting Files */,
+				F54748BA209196A90002F65B /* ViewController.swift */,
+				4E3DCF2120AC2300001B71E3 /* EncyclopediaTemplateCollectionCell.swift */,
+				4E4D9F3C20A58749000F475B /* Setting.swift */,
+				4E3DCF2820ADABCC001B71E3 /* PCMBuffer.swift */,
+				F54748BC209196A90002F65B /* Main.storyboard */,
+			);
+			path = "jarvis-ios";
+			sourceTree = "<group>";
+		};
+		FC9FDAC3602D7A2309CEB936 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EDF9FDF209819EE00B03045 /* Alamofire.framework */,
+				D999A0A2EF5C3432E9C39A9E /* Pods_jarvis_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E4D9EFA20A33097000F475B /* jarvis-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E4D9F0220A33097000F475B /* Build configuration list for PBXNativeTarget "jarvis-iosTests" */;
+			buildPhases = (
+				4E4D9EF720A33097000F475B /* Sources */,
+				4E4D9EF820A33097000F475B /* Frameworks */,
+				4E4D9EF920A33097000F475B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E4D9F0120A33097000F475B /* PBXTargetDependency */,
+			);
+			name = "jarvis-iosTests";
+			productName = "jarvis-iosTests";
+			productReference = 4E4D9EFB20A33097000F475B /* jarvis-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F54748B4209196A90002F65B /* jarvis-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54748C7209196AA0002F65B /* Build configuration list for PBXNativeTarget "jarvis-ios" */;
+			buildPhases = (
+				8D4D03BE87D7F6E75A747E11 /* [CP] Check Pods Manifest.lock */,
+				F54748B1209196A90002F65B /* Sources */,
+				F54748B2209196A90002F65B /* Frameworks */,
+				F54748B3209196A90002F65B /* Resources */,
+				35615197492C52A6F741A1D7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jarvis-ios";
+			productName = "jarvis-ios";
+			productReference = F54748B5209196A90002F65B /* jarvis-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F54748AD209196A90002F65B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = naverlabs;
+				TargetAttributes = {
+					4E4D9EFA20A33097000F475B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F54748B4209196A90002F65B;
+					};
+					F54748B4209196A90002F65B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = F54748B0209196A90002F65B /* Build configuration list for PBXProject "jarvis-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F54748AC209196A90002F65B;
+			productRefGroup = F54748B6209196A90002F65B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F54748B4209196A90002F65B /* jarvis-ios */,
+				4E4D9EFA20A33097000F475B /* jarvis-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E4D9EF920A33097000F475B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54748B3209196A90002F65B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54748C3209196AA0002F65B /* LaunchScreen.storyboard in Resources */,
+				F54748C0209196AA0002F65B /* Assets.xcassets in Resources */,
+				4E4CAA1A20A309E4001A1305 /* ClovaAPIKey.plist in Resources */,
+				F54748CB209196EF0002F65B /* Podfile in Resources */,
+				F54748BE209196A90002F65B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35615197492C52A6F741A1D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-jarvis-ios/Pods-jarvis-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${PODS_ROOT}/naveridlogin-sdk-ios/NaverThirdPartyLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaverThirdPartyLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jarvis-ios/Pods-jarvis-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4D03BE87D7F6E75A747E11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jarvis-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E4D9EF720A33097000F475B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E4D9EFE20A33097000F475B /* LoginWithNaverIdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54748B1209196A90002F65B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3DCF2920ADABCC001B71E3 /* PCMBuffer.swift in Sources */,
+				4E3DCF1020AB20B7001B71E3 /* ContextManager.swift in Sources */,
+				4E4D9F7B20A598F4000F475B /* BodyParserProtocol.swift in Sources */,
+				4E3DCF1C20AB4144001B71E3 /* SpeechSynthesizer.swift in Sources */,
+				4E4CAA1C20A30C2D001A1305 /* APIKeyManager.swift in Sources */,
+				4E4D9F7C20A598F4000F475B /* ParsedBody.swift in Sources */,
+				4E3DCF2720ADA8AD001B71E3 /* StreamExtensions.swift in Sources */,
+				4E3DCF2B20ADCDB7001B71E3 /* AVAudioPCMBuffer.swift in Sources */,
+				F54748BB209196A90002F65B /* ViewController.swift in Sources */,
+				4E4D9F7820A598F4000F475B /* RawBodyParser.swift in Sources */,
+				4E3DCF1A20AB40BA001B71E3 /* Speaker.swift in Sources */,
+				4E4D9F7520A598F4000F475B /* URLEncodedBodyParser.swift in Sources */,
+				4E3DCF2220AC2300001B71E3 /* EncyclopediaTemplateCollectionCell.swift in Sources */,
+				4E3665B020A9C5CE00737FF9 /* Queue.swift in Sources */,
+				4E3665B220A9C5EE00737FF9 /* LinkedList.swift in Sources */,
+				4E4D9F7620A598F4000F475B /* BodyParser.swift in Sources */,
+				4E4D9F7420A598F4000F475B /* TextBodyParser.swift in Sources */,
+				4E4CAA1E20A31C5D001A1305 /* ClovaServiceClient.swift in Sources */,
+				4E3DCF1420AB33FF001B71E3 /* AudioPlayer.swift in Sources */,
+				F54748B9209196A90002F65B /* AppDelegate.swift in Sources */,
+				4E3DCF1820AB3C05001B71E3 /* Device.swift in Sources */,
+				4E4D9F3D20A58749000F475B /* Setting.swift in Sources */,
+				4E4D9F7F20A5A54E000F475B /* StringExtensions.swift in Sources */,
+				4E3DCF1220AB20EC001B71E3 /* Alerts.swift in Sources */,
+				4E4D9F7720A598F4000F475B /* MultiPartBodyParser.swift in Sources */,
+				4E4D9F7920A598F4000F475B /* JSONBodyParser.swift in Sources */,
+				4E4D9F7A20A598F4000F475B /* Part.swift in Sources */,
+				4E4CAA15209DB6C7001A1305 /* ClovaAccessTokenManager.swift in Sources */,
+				4E3DCF1620AB367E001B71E3 /* Clova.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E4D9F0120A33097000F475B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F54748B4209196A90002F65B /* jarvis-ios */;
+			targetProxy = 4E4D9F0020A33097000F475B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F54748BC209196A90002F65B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54748BD209196A90002F65B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F54748C1209196AA0002F65B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54748C2209196AA0002F65B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E4D9F0320A33097000F475B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4TX5PVNK4;
+				INFOPLIST_FILE = "jarvis-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.grohong.jarvis-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jarvis-ios.app/jarvis-ios";
+			};
+			name = Debug;
+		};
+		4E4D9F0420A33097000F475B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4TX5PVNK4;
+				INFOPLIST_FILE = "jarvis-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.grohong.jarvis-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jarvis-ios.app/jarvis-ios";
+			};
+			name = Release;
+		};
+		F54748C5209196AA0002F65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F54748C6209196AA0002F65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F54748C8209196AA0002F65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E749508CEA7B1E03FC7B3A13 /* Pods-jarvis-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4TX5PVNK4;
+				INFOPLIST_FILE = "jarvis-ios/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naverlabs.jarvis-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F54748C9209196AA0002F65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810AB77DF0288D3623EB3414 /* Pods-jarvis-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4TX5PVNK4;
+				INFOPLIST_FILE = "jarvis-ios/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naverlabs.jarvis-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E4D9F0220A33097000F475B /* Build configuration list for PBXNativeTarget "jarvis-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E4D9F0320A33097000F475B /* Debug */,
+				4E4D9F0420A33097000F475B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54748B0209196A90002F65B /* Build configuration list for PBXProject "jarvis-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54748C5209196AA0002F65B /* Debug */,
+				F54748C6209196AA0002F65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54748C7209196AA0002F65B /* Build configuration list for PBXNativeTarget "jarvis-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54748C8209196AA0002F65B /* Debug */,
+				F54748C9209196AA0002F65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F54748AD209196A90002F65B /* Project object */;
+}

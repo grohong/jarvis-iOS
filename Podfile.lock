@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - naveridlogin-sdk-ios (4.0.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireImage
+  - naveridlogin-sdk-ios
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - naveridlogin-sdk-ios
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  naveridlogin-sdk-ios: 16d901a8a3120f84432088e68dd8306e7030c3cb
+
+PODFILE CHECKSUM: 7d377726fa1f1847ced5ddc095e86a940821e752
+
+COCOAPODS: 1.5.0
